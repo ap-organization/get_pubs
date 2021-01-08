@@ -1,0 +1,26 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "localhost": "functions-framework --target=pubsScrapper",
+    "deploy": "gcloud functions deploy pubsScrapper --trigger-http --runtime=nodejs12 --memory=1024MB --region=europe-west1",
+    "start": "functions start && functions deploy --source=. pubsScrapper --trigger-http",
+    "test": "curl 'localhost:8080/'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.7.1",
+    "chalk": "^4.1.0",
+    "google-spreadsheet": "^3.0.14",
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.2.1"
+  }
+}

@@ -10,7 +10,7 @@
 * [Contact](#contact)
 
 ## General info
-WIP
+code is WIP, done in 1h , will stay WIP
 
 ## Workflow
 WIP
